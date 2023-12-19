@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="it" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Di Paolo - Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+    
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-introduzione" type="button" role="tab" aria-controls="nav-introduzione" aria-selected="true">Introduzione</button>
+
+          <button class="nav-link" id="nav-selettori-tab" data-bs-toggle="tab" data-bs-target="#nav-selettori" type="button" role="tab" aria-controls="nav-selettori" aria-selected="false">Selettori</button>
+
+          <button class="nav-link" id="nav-pseudom-tab" data-bs-toggle="tab" data-bs-target="#nav-pseudom" type="button" role="tab" aria-controls="nav-pseudom" aria-selected="false">Pseudo Classi</button>
+
+          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Inline</button>
+
+
+      
+        </div>
+      </nav>
+    <div class="tab-content container" id="nav-tabContent">        
+        <div class="tab-pane fade show active" id="nav-introduzione" role="tabpanel" aria-labelledby="nav-introduzione-tab" tabindex="0"> 
+            
+            <h1>Introduzione</h1>
+            <p>Benvenuti in questa guida al CSS che ho realizzato per prima cosa per me stesso, una guida online sempre disponibile dove andare a ripescare gli argomenti che inevitabilmente dimentico sempre.</p>
+            <p>Ho pensato quindi che la cosa migliore potesse essere quella di creare questa risorsa e metterla online per tutti, ci sono sempre persone interessate alla documentazione e la particolarità di questa guida, è quella di essere accompagnata da piccoli video dimostrativi, una caratteristica che in questa forma non ho mai trovato nei siti Web.</p>
+            <p>Ho anche cercato di realizzare una navigazione semplice e intuitiva dove non ci si può perdere durante l'apprendimento perché ogni argomento è ben diviso e accessibile in qualsiasi momento</p>
+            <p>Vi lascio anche il link del canale You Tube legato a questo video con tutti gli short e alcune altre guide interessanti per Bootstrap</p>
+            <a href="https://www.youtube.com/channel/UCUdSecLh8VMiYsNGFy5tvgQ">Trovate a questo link il canale YouTube</a>
+            <img src="" alt="">
+        </div>
+
+        <div class="tab-pane fade" id="nav-selettori" role="tabpanel" aria-labelledby="nav-selettori-tab" tabindex="0">
+            <!-- bottoni legenda  -->
+            <h1>Selettori di Tipo, Classe e ID</h1>
+            <div class="nav container legenda mb-3">
+              <a href="#tipo" class="btn btn-outline-warning">Tipo</a>
+              <a href="#classe" class="btn btn-outline-warning">Classe</a>
+              <a href="#id" class="btn btn-outline-warning">Id</a>
+              <a href="#pseudo" class="btn btn-outline-warning">Pseudo elementi</a>
+              <a href="#combinatori" class="btn btn-outline-warning">Combinatori</a>
+              <a href="#selettori" class="btn btn-outline-warning">Selettori di Attributo</a>
+              <a href="#corrispondenza" class="btn btn-outline-warning">Selettori di Corrispondenza</a>
+            </div>
+            <!-- selettori di tipo  -->
+            
+            <hr id="tipo">
+            <h3>Selettori di Tipo</h3>
+            <p>I selettori di tipo mirano a un elemento HTML specifico. Ad esempio, per stilizzare tutti gli elementi h1, puoi utilizzare il seguente codice CSS:</p>
+            <pre id="myPreTag1" class="text-start">
+              <div class="codice">
+                <code>                
+                h1 {
+                  /* I tuoi stili qui */
+                }
+                </code>
+              </div>
+            </pre>            
+            <em>Qui, il selettore h1 mira a tutti gli elementi h1 nel documento HTML.</em>
+            <!-- selettori di classe  -->
+            <hr id="classe">
+            <h3>Selettori di Classe</h3>
+            <p>I selettori di classe mirano agli elementi con un valore specifico per il loro attributo di classe. Considera l'esempio seguente, dove il selettore di classe stila gli elementi con la classe "box":</p>
+            <pre id="myPreTag1" class="text-start">
+              <div class="codice">
+                <code>
+                  .box {
+                    /* I tuoi stili qui */
+                  }
+                </code>
+              </div>
+            </pre>            
+            <em>In HTML, gli elementi con la classe "box" verrebbero selezionati e stilizzati di conseguenza.</em>
+            <!-- selettori di id  -->
+            <hr id="id">
+            <h3>Selettori di Id</h3>
+            <p>I selettori di ID mirano agli elementi con un valore specifico per il loro attributo di ID. Il seguente codice CSS dimostra come stilizzare un elemento con l'ID "unique":</p>
+            <pre id="myPreTag1" class="text-start">
+              <div class="codice">
+                <code>
+                  #unique {
+                    /* I tuoi stili qui */
+                  }
+                </code>
+              </div>
+            </pre>            
+            <em>In HTML, l'elemento con l'ID "unique" verrebbe stilizzato in modo univoco.</em>
+            <!-- pseudo elementi  -->
+            <hr id="pseudo">
+            <h3>Pseudo-classi e Pseudo-elementi</h3>
+            <p>Questo gruppo di selettori include pseudo-classi, che stiliano determinati stati di un elemento. Ad esempio, la pseudo-classe :hover seleziona un elemento solo quando viene sovrapposto dal puntatore del mouse:</p>
+            <pre id="myPreTag1" class="text-start">
+              <div class="codice">
+                <code>
+                  a:hover {
+                    /* I tuoi stili qui */
+                  }
+                </code>
+              </div>
+            </pre>            
+            <p>Include anche pseudo-elementi, che selezionano una parte specifica di un elemento anziché l'elemento stesso. Ad esempio, ::first-line seleziona sempre la prima riga di testo all'interno di un elemento p, comportandosi come se un span fosse avvolto attorno alla prima riga formattata e poi selezionato.</p>
+            <pre id="myPreTag1" class="text-start">
+              <div class="codice">
+                <code>
+                  p::first-line {
+                    /* I tuoi stili qui */
+                  }
+                </code>
+              </div>
+            </pre>
+            <!-- combinatori  -->
+            <hr id="combinatori">
+            <h3>Combinatori</h3>
+            <p>I combinatori consentono di unire più selettori per mirare a elementi specifici nei documenti. Nell'esempio seguente, si selezionano i paragrafi che sono figli diretti degli elementi article utilizzando il combinatore di figlio (>):</p>
+            <pre id="myPreTag1" class="text-start">
+              <div class="codice">
+                <code>
+                  article > p {
+                    /* I tuoi stili qui */
+                  }
+                  //oppure
+                  article p {
+                    /* I tuoi stili qui */
+                  }
+                </code>
+              </div>
+            </pre>
+            <hr id="selettori">
+          <div class="tabella"> 
+            <h2>Selettori di Attributo</h2>
+            <p>Questi selettori consentono la selezione di un elemento basandosi sulla presenza di un attributo o su diverse corrispondenze contro il valore dell'attributo.</p>          
+            <table>
+              <thead>
+                <tr>
+                  <th>Selettore</th>
+                  <th>Esempio</th>
+                  <th>Descrizione</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>[attr]</code></td>
+                  <td><code>a[title]</code></td>
+                  <td>Seleziona gli elementi con un attributo "attr" (il cui nome è il valore tra parentesi quadre).</td>
+                </tr>
+                <tr>
+                  <td><code>[attr=value]</code></td>
+                  <td><code>a[href="https://example.com"]</code></td>
+                  <td>Seleziona gli elementi con un attributo "attr" il cui valore è esattamente "value".</td>
+                </tr>
+                <tr>
+                  <td><code>[attr~=value]</code></td>
+                  <td><code>p[class~="special"]</code></td>
+                  <td>Seleziona gli elementi con un attributo "attr" il cui valore contiene "value" nella sua lista di valori (separati da spazi).</td>
+                </tr>
+                <tr>
+                  <td><code>[attr|=value]</code></td>
+                  <td><code>div[lang|="zh"]</code></td>
+                  <td>Seleziona gli elementi con un attributo "attr" il cui valore inizia con "value" immediatamente seguito da un trattino.</td>
+                </tr>
+              </tbody>
+            </table>          
+          </div>
+          <hr id="corrispondenza">
+          <div class="tabella">
+            <h2>Selettori di Corrispondenza di Sottostringhe</h2>
+          
+            <p>Questi selettori consentono una corrispondenza più avanzata delle sottostringhe all'interno del valore del tuo attributo. Ad esempio, se avessi classi come box-warning e box-error e volessi selezionare tutto ciò che inizia con la stringa "box-", potresti usare [class^="box-"] per selezionarle entrambe (o [class|="box"] come descritto nella sezione precedente).</p>
+          
+            <table>
+              <thead>
+                <tr>
+                  <th>Selettore</th>
+                  <th>Esempio</th>
+                  <th>Descrizione</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>[attr^=value]</code></td>
+                  <td><code>li[class^="box-"]</code></td>
+                  <td>Seleziona gli elementi con un attributo "attr" il cui valore inizia con "value".</td>
+                </tr>
+                <tr>
+                  <td><code>[attr$=value]</code></td>
+                  <td><code>li[class$="-box"]</code></td>
+                  <td>Seleziona gli elementi con un attributo "attr" il cui valore termina con "value".</td>
+                </tr>
+                <tr>
+                  <td><code>[attr*=value]</code></td>
+                  <td><code>li[class*="box"]</code></td>
+                  <td>Seleziona gli elementi con un attributo "attr" il cui valore contiene "value" in qualsiasi parte della stringa.</td>
+                </tr>
+              </tbody>
+            </table>
+            <p><br></p>
+    
+          </div>
+        </div>
+  
+
+        <div class="tab-pane fade" id="nav-pseudom" role="tabpanel" aria-labelledby="nav-pseudom-tab" tabindex="0">
+          <!-- bottoni legenda  -->
+          <h1>Pseudo Classi</h1>
+          <div class="nav container legenda mb-3">
+            <a href="#intro" class="btn btn-outline-warning">Introduzione</a>
+            <a href="#esempio" class="btn btn-outline-warning">Esempio</a>
+          </div>
+          <!-- pseudo classi introduzione  -->
+          <hr id="intro">
+            <h3>Pseudo Classi</h3>
+            <p>Una pseudo-classe è un selettore che seleziona gli elementi che si trovano in uno stato specifico, ad esempio, sono il primo elemento del loro tipo o stanno per essere evidenziati dal puntatore del mouse.</p> 
+              
+            <p>Tendono ad agire come se avessi applicato una classe a una parte del tuo documento, spesso aiutandoti a ridurre l'eccesso di classi nel tuo markup e fornendoti un codice più flessibile e manutenibile.</p>
+
+            <p>Le pseudo-classi sono parole chiave che iniziano con due punti. Ad esempio, :hover è una pseudo-classe.</p>
+            
+            <h4>Esempio semplice di pseudo-classe</h4>
+            <p>Consideriamo un esempio semplice. Se volessimo rendere il primo paragrafo in un articolo più grande e in grassetto, potremmo aggiungere una classe a quel paragrafo e quindi aggiungere CSS a quella classe, come mostrato nel primo esempio qui sotto:</p>
+
+            <pre id="myPreTag1" class="text-start">
+              <div class="codice">
+                <code>
+                  .first {
+                    font-size: 120%;
+                    font-weight: bold;
+                  }
+
+                  &lt;article&gt;
+                  &lt;p class=&quot;first&quot;&gt;Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.&lt;/p&gt;
+
+                  &lt;p&gt;Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
+                  greens dandelion okra wakame tomato. Dandelion cucumber     earthnut pea peanut soko zucchini.&lt;/p&gt;
+                  &lt;/article&gt;
+                </code>
+              </div>
+            </pre>
+            
+            <p>Tuttavia, questo potrebbe essere fastidioso da mantenere: e se venisse aggiunto un nuovo paragrafo all'inizio del documento? Dovremmo spostare la classe al nuovo paragrafo.</p> 
+            
+            <p>Invece di aggiungere la classe, potremmo utilizzare il selettore :first-child, una pseudo-classe che mirerà sempre al primo elemento figlio nell'articolo, e non dovremo più modificare l'HTML (questo potrebbe non essere sempre possibile comunque, forse a causa della generazione da parte di un CMS).</p>
+
+            <pre id="myPreTag1" class="text-start">
+              <div class="codice">
+                <code>
+                  article p:first-child {
+                    font-size: 120%;
+                    font-weight: bold;
+                  }
+
+                  &lt;article&gt;
+                  &lt;p&gt;Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+                  melon azuki bean garlic.&lt;/p&gt;
+
+                  &lt;p&gt;Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
+                  greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.&lt;/p&gt;
+                  &lt;/article&gt;
+                </code>
+              </div>
+            </pre>
+            
+            <p>Tutte le pseudo-classi si comportano in questo stesso modo. Mirano a una parte del tuo documento che si trova in uno stato specifico, comportandosi come se avessi aggiunto una classe nel tuo HTML. Dai un'occhiata ad alcuni altri esempi su MDN:</p>
+            
+            <ol>
+              <li>:last-child</li>
+              <li>:only-child</li>
+              <li>:invalid</li>
+            </ol>
+
+            <div class="tips">
+              <em><strong>Nota:</strong> <br> È valido scrivere pseudo-classi ed elementi senza alcun selettore di elemento che li precede. Nell'esempio sopra, potresti scrivere :first-child e la regola si applicherebbe a qualsiasi elemento che è il primo figlio di un elemento article, non solo a un paragrafo primo figlio. :first-child è equivalente a *:first-child. Tuttavia, di solito si desidera maggiore controllo, quindi è necessario essere più specifici.</em>
+            </div>
+            <hr id="esempio">
+            <h3 class="text-center">Video d'esempio</h3>
+            <p>In questo video dimostro il funzionamento delle pseudo classi con esempi sulle proprietà :first-child - :last-child - :hover</p>
+            <p>Con first-child andremo a selezionare il primo elemento dell'article, con last-child il secondo che equivale anche all'ultimo essendo 2 paragrafi, nell'ultimo esempio hover il colore del testo verrà modificato al passaggio del mouse sopra di esso.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kWWNcH2nS0Q?si=shHqzPFJI8Dd0hxw" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p><br></p>
+        </div>
+
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">testo scritto 3</div>
+        
+
+
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
+
+
+                
+
+

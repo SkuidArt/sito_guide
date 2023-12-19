@@ -1,0 +1,23 @@
+body{
+    margin:50px;
+    background-color: #020202;
+}
+
+p{
+    color: white;
+}
+
+
+
+/* proprietà primo figlio */
+article p:first-child{
+    
+}
+/* proprietà ultimo figlio */
+article p:last-child{
+    
+}
+/* proprietà hover del mouse  */
+article p:hover{
+    color:red;
+}

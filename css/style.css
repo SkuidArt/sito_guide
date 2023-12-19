@@ -48,12 +48,16 @@ em{
 th, td{
     border:2px solid #fff;
     padding:5px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #ddd;
 }
 
 th {
     background-color: #f2f2f2;
+}
+
+td:hover{
+    background-color: #0a0a0a;
 }
 
 iframe{
@@ -63,7 +67,7 @@ iframe{
 }
 
 .tips{
-    background-color: #425b6f;
+    background-color: #3e5669;
     padding: 15px;
     border-radius: 20px;
 }
@@ -74,5 +78,6 @@ table {
     margin-bottom: 1em;
     overflow-x: auto;
     display: block;
-    white-space: nowrap;
+
+    --bs-table-bg: rgb(12, 19, 21)!important;
 }

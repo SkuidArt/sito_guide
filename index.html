@@ -20,6 +20,8 @@
           <button class="nav-link" id="nav-pseudom-tab" data-bs-toggle="tab" data-bs-target="#nav-pseudom" type="button" role="tab" aria-controls="nav-pseudom" aria-selected="false">Pseudo Classi</button>
 
           <button class="nav-link" id="nav-selettori-lista-tab" data-bs-toggle="tab" data-bs-target="#nav-selettori-lista" type="button" role="tab" aria-controls="nav-selettori-lista" aria-selected="false">Lista Selettori</button>
+          
+          <button class="nav-link" id="nav-text-tab" data-bs-toggle="tab" data-bs-target="#nav-text" type="button" role="tab" aria-controls="nav-text" aria-selected="false">Text</button>
 
 
       
@@ -283,35 +285,270 @@
             <p>Con first-child andremo a selezionare il primo elemento dell'article, con last-child il secondo che equivale anche all'ultimo essendo 2 paragrafi, nell'ultimo esempio hover il colore del testo verrà modificato al passaggio del mouse sopra di esso.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/kWWNcH2nS0Q?si=shHqzPFJI8Dd0hxw" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p><br></p>
-        </div>
+          </div>
 
-        <div class="tab-pane fade" id="nav-selettori-lista" role="tabpanel" aria-labelledby="nav-selettori-lista-tab" tabindex="0">
-          <div class="container">
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>Pseudo classe</th>
-                        <th>Selettore</th>
-                        <th>Descrizione</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>:active</td>
-                        <td>a:active</td>
-                        <td>Seleziona il link attivo</td>
-                    </tr>
-                    <tr>
-                        <td>:visited</td>
-                        <td>a:visited</td>
-                        <td>Selects all visited links</td>
-                    </tr>
-                    </tbody>
-                </table>
+            <div class="tab-pane fade" id="nav-selettori-lista" role="tabpanel" aria-labelledby="nav-selettori-lista-tab" tabindex="0">
+              <div class="container">
+                <div class="table-responsive">
+                    <h1 class="text-center mb-5">Di seguito la lista dei selettori possibili</h1>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Pseudo classe</th>
+                            <th>Selettore</th>
+                            <th>Descrizione</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              <td>:active</td>
+                              <td>a:active</td>
+                              <td>Seleziona il link attivo</td>
+                          </tr>
+                          <tr>
+                              <td>::after </td>
+                              <td>p::after</td>
+                              <td>Inserisci qualcosa dopo il contenuto di ogni elemento p</td>
+                          </tr>
+                          <tr>
+                            <td>::before</td>
+                            <td>p::before</td>
+                            <td>Inserisci qualcosa prima del contenuto di ogni elemento p</td>
+                          </tr>
+                          <tr>
+                            <td>:checked</td>
+                            <td>input:checked</td>
+                            <td>Seleziona ogni elemento input verificato</td>
+                          </tr>
+                          <tr>
+                            <td>:default</td>
+                            <td>input:default</td>
+                            <td>Seleziona l'elemento input predefinito</td>
+                          </tr>
+                          <tr>
+                            <td>:disabled</td>
+                            <td>input:disabled</td>
+                            <td>Seleziona ogni elemento input disabilitato</td>
+                          </tr>
+                          <tr>
+                            <td>:empty</td>
+                            <td>p:empty</td>
+                            <td>Seleziona ogni elemento p che non ha figli (compresi nodi di testo)</td>
+                          </tr>
+                          <tr>
+                            <td>:enabled</td>
+                            <td>input:enabled</td>
+                            <td>Seleziona ogni elemento input abilitato</td>
+                          </tr>
+                          <tr>
+                            <td>:first-child</td>
+                            <td>p:first-child</td>
+                            <td>Seleziona ogni elemento p che è il primo figlio del suo genitore</td>
+                          </tr>
+                          <tr>
+                            <td>::first-letter</td>
+                            <td>p::first-letter</td>
+                            <td>Seleziona la prima lettera di ogni elemento p</td>
+                          </tr>
+                          <tr>
+                            <td>::first-line</td>
+                            <td>p::first-line</td>
+                            <td>Seleziona la prima riga di ogni elemento p</td>
+                          </tr>
+                          <tr>
+                            <td>:first-of-type</td>
+                            <td>p:first-of-type</td>
+                            <td>Seleziona ogni elemento p che è il primo elemento p del suo genitore</td>
+                          </tr>
+                          <tr>
+                            <td>:focus</td>
+                            <td>input:focus</td>
+                            <td> Seleziona l'elemento input che ha il focus</td>
+                          </tr>
+                          <tr>
+                            <td>:fullscreen</td>
+                            <td>:fullscreen</td>
+                            <td>Seleziona l'elemento in modalità schermo intero</td>
+                          </tr>
+                          <tr>
+                            <td>:hover</td>
+                            <td>a:hover</td>
+                            <td>Seleziona i link al passaggio del mouse</td>
+                          </tr>
+                          <tr>
+                            <td>:in-range</td>
+                            <td>input:in-range</td>
+                            <td>Seleziona gli elementi input con un valore all'interno di un intervallo specificato</td>
+                          </tr>
+                          <tr>
+                            <td>:indeterminate</td>
+                            <td>input:indeterminate</td>
+                            <td>Seleziona gli elementi input in uno stato indeterminato</td>
+                          </tr>
+                          <tr>
+                            <td>:invalid</td>
+                            <td>input:invalid</td>
+                            <td>Seleziona tutti gli elementi input con un valore non valido</td>
+                          </tr>
+                          <tr>
+                            <td>:lang(language)</td>
+                            <td>p:lang(it)</td>
+                            <td>Seleziona ogni elemento p con un attributo lang uguale a "it" (italiano)</td>
+                          </tr>
+                          <tr>
+                            <td>:last-child</td>
+                            <td>p:last-child</td>
+                            <td>Seleziona ogni elemento p che è l'ultimo figlio del suo genitore</td>
+                          </tr>
+                          <tr>
+                            <td>:last-of-type</td>
+                            <td>p:last-of-type</td>
+                            <td>Seleziona ogni elemento p che è l'ultimo elemento p del suo genitore</td>
+                          </tr>
+                          <tr>
+                            <td>:link</td>
+                            <td>a:link</td>
+                            <td>Seleziona tutti i link non visitati</td>
+                          </tr>
+                          <tr>
+                            <td>::marker</td>
+                            <td>::marker</td>
+                            <td>Seleziona i marcatori degli elementi di lista</td>
+                          </tr>
+                          <tr>
+                            <td>:not(selector)</td>
+                            <td>:not(p)</td>
+                            <td>Seleziona ogni elemento che non è un elemento p</td>
+                          </tr>
+                          <tr>
+                            <td>:nth-child(n)</td>
+                            <td>p:nth-child(2)</td>
+                            <td>Seleziona ogni elemento p che è il secondo figlio del suo genitore</td>
+                          </tr>
+                          <tr>
+                            <td>:nth-last-child(n)</td>
+                            <td>p:nth-last-child(2)</td>
+                            <td>Seleziona ogni elemento p che è il secondo figlio del suo genitore, contando dall'ultimo figlio</td>
+                          </tr>
+                          <tr>
+                            <td>:nth-last-of-type(n)</td>
+                            <td>p:nth-last-of-type(2)</td>
+                            <td>Seleziona ogni elemento p che è il secondo elemento p del suo genitore, contando dall'ultimo figlio</td>
+                          </tr>
+                          <tr>
+                            <td>:nth-of-type(n)</td>
+                            <td>p:nth-of-type(2)</td>
+                            <td>Seleziona ogni elemento p che è il secondo elemento p del suo genitore</td>
+                          </tr>
+                          <tr>
+                            <td>:only-of-type</td>
+                            <td>p:only-of-type</td>
+                            <td>Seleziona ogni elemento p che è l'unico elemento p del suo genitore</td>
+                          </tr>
+                          <tr>
+                            <td>:only-child</td>
+                            <td>p:only-child</td>
+                            <td>Seleziona ogni elemento p che è l'unico figlio del suo genitore</td>
+                          </tr>
+                          <tr>
+                            <td>:optional</td>
+                            <td>input:optional</td>
+                            <td>Seleziona gli elementi input senza attributo "required"</td>
+                          </tr>
+                          <tr>
+                            <td>:out-of-range</td>
+                            <td>input:out-of-range</td>
+                            <td>Seleziona gli elementi input con un valore al di fuori di un intervallo specificato</td>
+                          </tr>
+                          <tr>
+                            <td>::placeholder</td>
+                            <td>input::placeholder</td>
+                            <td>Seleziona gli elementi input con l'attributo "placeholder" specificato</td>
+                          </tr>
+                          <tr>
+                            <td>:read-only</td>
+                            <td>input:read-only</td>
+                            <td>Seleziona gli elementi input con l'attributo "readonly" specificato</td>
+                          </tr>
+                          <tr>
+                            <td>:read-write</td>
+                            <td>input:read-write</td>
+                            <td>Seleziona gli elementi input senza l'attributo "readonly"</td>
+                          </tr>
+                          <tr>
+                            <td>:required</td>
+                            <td>input:required</td>
+                            <td>Seleziona gli elementi input con l'attributo "required" specificato</td>
+                          </tr>
+                          <tr>
+                            <td>:root</td>
+                            <td>:root</td>
+                            <td>Seleziona l'elemento radice del documento</td>
+                          </tr>
+                          <tr>
+                            <td>::selection</td>
+                            <td>::selection</td>
+                            <td>Seleziona la porzione di un elemento selezionata dall'utente</td>
+                          </tr>
+                          <tr>
+                            <td>:target</td>
+                            <td>#news:target</td>
+                            <td>Seleziona l'elemento #news attivo (cliccato su un URL contenente quel nome anchor)</td>
+                          </tr>
+                          <tr>
+                            <td>:valid</td>
+                            <td>input:valid</td>
+                            <td>Seleziona tutti gli elementi input con un valore valido</td>
+                          </tr>
+                          <tr>
+                            <td>:visited</td>
+                            <td>a:visited</td>
+                            <td>Seleziona tutti i link visitati</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>            
+              </div>
             </div>
-        </div>
-        </div>
+
+            <div class="tab-pane fade" id="nav-text" role="tabpanel" aria-labelledby="nav-text-tab" tabindex="0">
+              <!-- bottoni legenda  -->
+              <h1>Text</h1>
+              <div class="nav container legenda mb-3">
+                <a href="#tipo" class="btn btn-outline-warning">color</a>
+                <a href="#classe" class="btn btn-outline-warning">text-align</a>
+                <a href="#id" class="btn btn-outline-warning">text-align-last</a>
+                <a href="#pseudo" class="btn btn-outline-warning">Direction</a>
+                <a href="#combinatori" class="btn btn-outline-warning">unicode-bidi</a>
+                <a href="#selettori" class="btn btn-outline-warning">vertical-align</a>
+                <a href="#corrispondenza" class="btn btn-outline-warning">text-decoration-line</a>
+                <a href="#corrispondenza" class="btn btn-outline-warning">text-decoration-color</a>
+                <a href="#corrispondenza" class="btn btn-outline-warning">text-decoration-style</a>
+                <a href="#corrispondenza" class="btn btn-outline-warning">text-decoration-thickness</a>
+                <a href="#corrispondenza" class="btn btn-outline-warning">text-decoration</a>
+                <a href="#corrispondenza" class="btn btn-outline-warning">text-transform</a>
+                <a href="#corrispondenza" class="btn btn-outline-warning">text-indent</a>
+                <a href="#corrispondenza" class="btn btn-outline-warning">letter-spacing</a>
+                <a href="#corrispondenza" class="btn btn-outline-warning">line-height</a>
+                <a href="#corrispondenza" class="btn btn-outline-warning">word-spacing</a>
+                <a href="#corrispondenza" class="btn btn-outline-warning">white-space</a>
+                <a href="#corrispondenza" class="btn btn-outline-warning">text-shadow</a>
+              </div>
+              <!-- selettori di tipo  -->
+              
+              <hr id="tipo">
+              <h3>Selettori di Tipo</h3>
+              <p>I selettori di tipo mirano a un elemento HTML specifico. Ad esempio, per stilizzare tutti gli elementi h1, puoi utilizzare il seguente codice CSS:</p>
+              <pre id="myPreTag1" class="text-start">
+                <div class="codice">
+                  <code>                
+                  h1 {
+                    /* I tuoi stili qui */
+                  }
+                  </code>
+                </div>
+              </pre>            
+              <em>Qui, il selettore h1 mira a tutti gli elementi h1 nel documento HTML.</em>
         
 
 

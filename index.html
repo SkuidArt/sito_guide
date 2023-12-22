@@ -9,7 +9,9 @@
   </head>
   
   <body>
-    
+    <div class="tornasu">
+      <a href="#"><img id="floatingImage" src="img/torna.png" alt=""></a>
+    </div>
     <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
           
@@ -515,45 +517,210 @@
               <!-- bottoni legenda  -->
               <h1>Text</h1>
               <div class="nav container legenda mb-3">
-                <a href="#tipo" class="btn btn-outline-warning">color</a>
-                <a href="#classe" class="btn btn-outline-warning">text-align</a>
-                <a href="#id" class="btn btn-outline-warning">text-align-last</a>
-                <a href="#pseudo" class="btn btn-outline-warning">Direction</a>
-                <a href="#combinatori" class="btn btn-outline-warning">unicode-bidi</a>
-                <a href="#selettori" class="btn btn-outline-warning">vertical-align</a>
-                <a href="#corrispondenza" class="btn btn-outline-warning">text-decoration-line</a>
-                <a href="#corrispondenza" class="btn btn-outline-warning">text-decoration-color</a>
-                <a href="#corrispondenza" class="btn btn-outline-warning">text-decoration-style</a>
-                <a href="#corrispondenza" class="btn btn-outline-warning">text-decoration-thickness</a>
-                <a href="#corrispondenza" class="btn btn-outline-warning">text-decoration</a>
-                <a href="#corrispondenza" class="btn btn-outline-warning">text-transform</a>
-                <a href="#corrispondenza" class="btn btn-outline-warning">text-indent</a>
-                <a href="#corrispondenza" class="btn btn-outline-warning">letter-spacing</a>
-                <a href="#corrispondenza" class="btn btn-outline-warning">line-height</a>
-                <a href="#corrispondenza" class="btn btn-outline-warning">word-spacing</a>
-                <a href="#corrispondenza" class="btn btn-outline-warning">white-space</a>
-                <a href="#corrispondenza" class="btn btn-outline-warning">text-shadow</a>
+                <a href="#color" class="btn btn-outline-warning">color</a>
+                <a href="#text-align" class="btn btn-outline-warning">text-align</a>
+                <a href="#text-align-last" class="btn btn-outline-warning">text-align-last</a>
+                <a href="#direction" class="btn btn-outline-warning">direction</a>
+                <a href="#vertical-align" class="btn btn-outline-warning">vertical-align</a>
+                <a href="#text-decoration-line" class="btn btn-outline-warning">text-decoration-line</a>
+                <a href="#text-decoration-color" class="btn btn-outline-warning">text-decoration-color</a>
+                <a href="#text-decoration-style" class="btn btn-outline-warning">text-decoration-style</a>
+                <a href="#text-decoration-thickness" class="btn btn-outline-warning">text-decoration-thickness</a>
+                <a href="#text-decoration" class="btn btn-outline-warning">text-decoration</a>
+                <a href="#text-transform" class="btn btn-outline-warning">text-transform</a>
+                <a href="#text-indent" class="btn btn-outline-warning">text-indent</a>
+                <a href="#letter-spacing" class="btn btn-outline-warning">letter-spacing</a>
+                <a href="#line-height" class="btn btn-outline-warning">line-height</a>
+                <a href="#word-spacing" class="btn btn-outline-warning">word-spacing</a>
+                <a href="#white-space" class="btn btn-outline-warning">white-space</a>
+                <a href="#text-shadow" class="btn btn-outline-warning">text-shadow</a>
               </div>
-              <!-- selettori di tipo  -->
+              <!-- proprietà color  -->
               
-              <hr id="tipo">
-              <h3>Selettori di Tipo</h3>
-              <p>I selettori di tipo mirano a un elemento HTML specifico. Ad esempio, per stilizzare tutti gli elementi h1, puoi utilizzare il seguente codice CSS:</p>
+              <hr id="color">
+              <h3>Colore del Testo</h3>
+              <p>La proprietà color viene utilizzata per impostare il colore del testo. Il colore può essere specificato mediante:</p>
+              <ul>
+                <li>un nome di colore, come "red" (rosso),</li>
+                <li>un valore esadecimale HEX, come "#ff0000",</li>
+                <li>un valore RGB, come "rgb(255,0,0)".</li>
+              </ul>
+              <p>Il colore predefinito del testo per una pagina è definito nel selettore body.</p>
               <pre id="myPreTag1" class="text-start">
                 <div class="codice">
                   <code>                
-                  h1 {
-                    /* I tuoi stili qui */
-                  }
+                    body {
+                      color: blue;
+                    }
+                    
+                    h1 {
+                      color: green;
+                    }
                   </code>
                 </div>
               </pre>            
-              <em>Qui, il selettore h1 mira a tutti gli elementi h1 nel documento HTML.</em>
+              <div class="tips">
+                <em>body { color: blue; }:
+                  Il selettore body si riferisce all'elemento body del documento HTML, che rappresenta il corpo della pagina.
+                  La proprietà color viene utilizzata per impostare il colore del testo all'interno dell'elemento body.
+                  Nel nostro caso, il colore del testo è impostato su blu (blue).
+                  h1 { color: green; }:
+                
+                  Il selettore h1 si riferisce a tutti gli elementi di intestazione di primo livello h1 nel documento HTML.
+                  La proprietà color viene utilizzata per impostare il colore del testo all'interno degli elementi h1.
+                  Nel nostro caso, il colore del testo per gli elementi h1 è impostato su verde (green).
+                  In generale, questi stili verranno applicati a tutti gli elementi body e h1 nella tua pagina HTML, a meno che non vengano sovrascritti da stili più specifici o da altri fogli di stile CSS. Questi stili determinano che il testo nel corpo della pagina sarà blu, mentre il testo negli elementi di intestazione di primo livello (h1) sarà verde.</em>                  
+              </div>
+              <h3 style="text-align:center;">Un video esempio di color applicato</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/nW6Gk71GsAk?si=qxRrleORR2J1g-c0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <p><br></p>
+              <!-- proprietà text-align -->
+              <hr id="text-align">
+              <h3>Allineamento del Testo</h3>
+              <p>La proprietà text-align viene utilizzata per impostare l'allineamento orizzontale di un testo.</p>
+              <p>Un testo può essere allineato a sinistra o a destra, centrato o giustificato.</p>
+              <p>Nell'esempio seguente viene mostrato un testo centrato e testi allineati a sinistra e a destra (l'allineamento a sinistra è predefinito se la direzione del testo è da sinistra a destra, e l'allineamento a destra è predefinito se la direzione del testo è da destra a sinistra):</p>
+              <pre id="myPreTag1" class="text-start">
+                <div class="codice">
+                  <code>                
+                    h1 {
+                      text-align: center;
+                    }
+                    
+                    h2 {
+                      text-align: left;
+                    }
+                    
+                    h3 {
+                      text-align: right;
+                    }
+                  </code>
+                </div>
+              </pre> 
+              <p>Quando la proprietà text-align è impostata su "justify", ogni riga viene estesa in modo che ogni riga abbia larghezza uguale, e i margini sinistro e destro sono dritti (come nei giornali e nelle riviste):</p>
+              <div class="tips">
+                NB: non è consigliabile usare questa proprietà per giustificare il testo in quanto non è di facile lettura.
+              </div><br>
+              <pre id="myPreTag1" class="text-start">
+                <div class="codice">
+                  <code>                
+                    div {
+                      text-align: justify;
+                    }                    
+                  </code>
+                </div>
+              </pre> 
+              <h3>Di seguito il video dimostrativo</h3>
+              <br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ymh-EyCO7y8?si=guU4vs0Tdh3cp4F5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <p><br></p>
+              <!-- proprietà text-align-last -->
+              <hr id="text-align-last">
+              <h3>Testo Allineato all'Ultimo</h3>
+              <p>La proprietà text-align-last specifica come allineare l'ultima riga di un testo.
+              Esempio:
+              Allinea l'ultima riga di testo in tre elementi p:</p>
+              <pre id="myPreTag1" class="text-start">
+                <div class="codice">
+                  <code>                
+                    p.a {
+                      text-align-last: right;
+                    }
+                    
+                    p.b {
+                      text-align-last: center;
+                    }
+                    
+                    p.c {
+                      text-align-last: justify;
+                    }                    
+                  </code>
+                </div>
+              </pre> 
+              <br>
+              <p>Nell'esempio sopra, i paragrafi con le classi a, b, e c hanno differenti allineamenti dell'ultima riga del testo. Il paragrafo con la classe a allinea l'ultima riga a destra, il paragrafo con la classe b la allinea al centro, mentre il paragrafo con la classe c la giustifica.</p>
+              <h3>Di seguito il video dimostrativo</h3>
+              <br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/9Nku-GCbYhg?si=aHN66D_HXC0me-ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <!-- proprietà text-align-last -->
+              <hr id="direction">
+              <h3>Direzione del Testo</h3>
+              <p>Le proprietà direction e unicode-bidi possono essere utilizzate per cambiare la direzione del testo di un elemento:</p>
+              <pre id="myPreTag1" class="text-start">
+                <div class="codice">
+                  <code>                
+                    p {
+                      direction: rtl;
+                      unicode-bidi: bidi-override;
+                    }                    
+                  </code>
+                </div>
+              </pre> 
+              <p>direction: rtl;: Questo imposta la direzione del testo a "destra verso sinistra" (Right-to-Left). Ciò significa che il testo all'interno dell'elemento, come un paragrafo p, sarà scritto e visualizzato da destra verso sinistra.</p>
+              <p>unicode-bidi: bidi-override;: Questo specifica la direzione del testo e il comportamento del bidirezionale (bidi) del testo. Con il valore "bidi-override", si indica che il testo deve essere sovrascritto bidirezionalmente in base alle direzioni specificate. Questo è spesso utilizzato in combinazione con direction: rtl; per gestire correttamente il testo in lingue che richiedono la scrittura da destra a sinistra.</p>
+              <p>In sostanza, questo blocco di stile CSS modifica la direzione del testo del paragrafo <p>, facendo sì che il testo venga visualizzato da destra verso sinistra e utilizzando le regole di scrittura bidirezionale specificate.</p>
+              <h3>Di seguito il video dimostrativo</h3>
+              <br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/K6QoUPsxnNU?si=OTl_geYkrrejdM_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <!-- proprietà vertical align -->
+              <hr id="vertical-align">
+              <h3>Allineamento Verticale</h3>
+              <p>La proprietà vertical-align imposta l'allineamento verticale di un elemento.</p>
+              <p>Esempio - Imposta l'allineamento verticale di un'immagine all'interno di un testo:</p>
+              <pre id="myPreTag1" class="text-start">
+                <div class="codice">
+                  <code>                
+                    img.a {
+                      vertical-align: baseline;
+                    }
+                    
+                    img.b {
+                      vertical-align: text-top;
+                    }
+                    
+                    img.c {
+                      vertical-align: text-bottom;
+                    }
+                    
+                    img.d {
+                      vertical-align: sub;
+                    }
+                    
+                    img.e {
+                      vertical-align: super;
+                    }                    
+                  </code>
+                </div>
+              </pre>
+              <p>img.a { vertical-align: baseline; }: Allinea l'immagine rispetto alla "baseline" del testo circostante. La "baseline" è la linea di base sulla quale si appoggiano i caratteri di testo.</p>
+              <p>img.b { vertical-align: text-top; }: Allinea la parte superiore dell'immagine con la parte superiore del contenuto testuale più alto nell'elemento padre.</p>
+              <p>img.c { vertical-align: text-bottom; }: Allinea la parte inferiore dell'immagine con la parte inferiore del contenuto testuale più basso nell'elemento padre.</p>
+              <p>img.d { vertical-align: sub; }: Allinea l'immagine come se fosse un indice (un po' più in basso rispetto alla linea di base).</p>
+              <p>img.e { vertical-align: super; }: Allinea l'immagine come se fosse un apice (un po' più in alto rispetto alla linea di base).</p>
+              <div class="tips">
+                Queste regole vengono utilizzate per posizionare l'immagine verticalmente all'interno del testo in base alle diverse opzioni di allineamento specificate dalla proprietà vertical-align. La scelta dipende spesso dalle esigenze di layout specifiche dell'elemento all'interno del contesto della pagina web.
+              </div>
+              <h3>Di seguito il video dimostrativo</h3>
+              <br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ExBIGB4oA5k?si=0pS9o4PmiXGewU9K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <br>
         
 
 
-    
-    
+    <!-- SCRIPT CHE MI PERMETTE DI FAR COMPARIRE IL PULSANTE TORNA SU DOPO ESSERE SCESO DI 500PX -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var body = document.body;
+  
+        window.onscroll = function() {
+          if (window.scrollY >= 800) {
+            body.classList.add("scrolled");
+          } else {
+            body.classList.remove("scrolled");
+          }
+        };
+      });
+    </script>
     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

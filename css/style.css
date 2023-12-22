@@ -8,6 +8,17 @@ body{
     background-color: var(--col-b);
 }
 
+#floatingImage {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+body.scrolled #floatingImage {
+    opacity: 1;
+    visibility: visible;
+}
+
 .nav-link {
     color: #ffffff;
 }
@@ -80,4 +91,17 @@ table {
     display: block;
 
     --bs-table-bg: rgb(12, 19, 21)!important;
+}
+
+.tornasu a{
+    position:absolute;
+    left:93%;
+    right: 0;
+    top:370px;
+    position: fixed;
+}
+
+.tornasu img{
+    width:50px;
+    height:50px;
 }

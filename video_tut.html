@@ -5,40 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        img{
-            width:50px;
-            height: 50px;
-        }
-        img.a {
-            vertical-align: baseline;
+        body{
+            background-color: black;
+            color:white;
         }
 
-        img.b {
-            vertical-align: text-top;
+        h1 {
+            text-shadow: 2px 2px;
+        }
+        h2 {
+            text-shadow: 2px 2px red;
+        }
+        h3 {
+            text-shadow: 2px 2px 5px red;
+        }  
+        h4 {
+            color: black;
+            text-shadow: 2px 2px 4px #fff;
+        }
+        h5 {
+            text-shadow: 0 0 3px #ff0000;
+        } 
+        h6 {
+            text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+        }
+        p {
+            color:black;
+            text-shadow: 1px 1px 2px white, 0 0 25px blue, 0 0 5px darkblue;
         }
 
-        img.c {
-        vertical-align: text-bottom;
-        }
 
-        img.d {
-        vertical-align: sub;
-        }
 
-        img.e {
-        vertical-align: super;
-        }
+        
+
     </style>
 </head>
 <body>
     <!-- in un article sono inseriti 2 paragrafi -->
      <article>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed perferendis eum doloribus reiciendis repudiandae et incidunt, atque commodi ut provident expedita, doloremque inventore iusto id accusantium quam laudantium? Magnam, quaerat?</p>
-        <img class="a" src="img/torna.png" alt="">
-        <img class="b" src="img/torna.png" alt="">
-        <img class="c" src="img/torna.png" alt="">
-        <img class="d" src="img/torna.png" alt="">
-        <img class="e" src="img/torna.png" alt="">
+        <h1>INTESTAZIONE DI PRIMO LIVELLO</h1>
+        <h2>INTESTAZIONE DI SECONDO LIVELLO</h2>
+        <h3>INTESTAZIONE DI TERZO LIVELLO</h3>
+        <h4>INTESTAZIONE DI QUARTO LIVELLO</h4>
+        <h5>INTESTAZIONE DI QUINTO LIVELLO</h5>
+        <h6>INTESTAZIONE DI SESTO LIVELLO</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloremque commodi fugiat eum distinctio. Veniam, iste ducimus repellat error ratione nesciunt deleniti nulla eos voluptate est in. Id, iste corrupti!</p>
     </article>
 </body>
 </html>

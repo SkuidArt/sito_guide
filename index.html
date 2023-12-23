@@ -700,14 +700,463 @@
               <div class="tips">
                 Queste regole vengono utilizzate per posizionare l'immagine verticalmente all'interno del testo in base alle diverse opzioni di allineamento specificate dalla proprietà vertical-align. La scelta dipende spesso dalle esigenze di layout specifiche dell'elemento all'interno del contesto della pagina web.
               </div>
+              <br>
               <h3>Di seguito il video dimostrativo</h3>
               <br>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/ExBIGB4oA5k?si=0pS9o4PmiXGewU9K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               <br>
-        
+              <!-- proprietà text-decoration-line -->
+              <hr id="text-decoration-line">
+              <h3>Aggiungere una Linea di Decorazione al Testo</h3>
+              <p>La proprietà text-decoration-line viene utilizzata per aggiungere una linea di decorazione al testo.</p>
+              <div class="tips">Suggerimento: Puoi combinare più di un valore, come overline e underline, per visualizzare linee sia sopra che sotto un testo.</div>
+              <br>
+              <pre id="myPreTag1" class="text-start">
+                <div class="codice">
+                  <code>                
+                    h1 {
+                      text-decoration-line: overline;
+                    }
+                    
+                    h2 {
+                      text-decoration-line: line-through;
+                    }
+                    
+                    h3 {
+                      text-decoration-line: underline;
+                    }
+                    
+                    p {
+                      text-decoration-line: overline underline;
+                    }                    
+                  </code>
+                </div>
+              </pre>
+              <br>
+              <div class="tips">Nota: Non è consigliato sottolineare il testo che non è un link, poiché questo spesso può confondere il lettore.</div>
+              <br>
+              <ul>
+                <li>h1: Aggiunge una linea di decorazione sopra l'elemento h1.</li>
+                <li>h2: Aggiunge una linea di decorazione attraverso l'elemento h2.</li>
+                <li>h3: Sottolinea l'elemento h3.</li>
+                <li>p: Combina linee di decorazione sopra e sotto il testo all'interno degli elementi p.</li>
+              </ul>
+              <p>Le linee di decorazione del testo sono spesso utilizzate in modo mirato per evidenziare determinate parti del contenuto.</p>
+              <br>
+              <h3>Di seguito il video dimostrativo</h3>
+              <br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/koCAmSRk8y8?si=52HMOdtVXQjSAjut" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <!-- proprietà text-decoration-color -->
+              <hr id="text-decoration-color">
+              <h3>Specificare un Colore per la Linea di Decorazione</h3>
+              <p>La proprietà text-decoration-color viene utilizzata per impostare il colore della linea di decorazione</p>
+              <pre id="myPreTag1" class="text-start">
+                <div class="codice">
+                  <code>                
+                    h1 {
+                      text-decoration-line: overline;
+                      text-decoration-color: red;
+                    }
+                    
+                    h2 {
+                      text-decoration-line: line-through;
+                      text-decoration-color: blue;
+                    }
+                    
+                    h3 {
+                      text-decoration-line: underline;
+                      text-decoration-color: green;
+                    }
+                    
+                    p {
+                      text-decoration-line: overline underline;
+                      text-decoration-color: purple;
+                    }                    
+                  </code>
+                </div>
+              </pre>
+              <ul>
+                <li>h1: Imposta una linea di decorazione sopra l'elemento h1 con il colore rosso (red).</li>
+                <li>h2: Imposta una linea di decorazione attraverso l'elemento h2 con il colore blu (blue).</li>
+                <li>h3: Imposta una sottolineatura dell'elemento h3 con il colore verde (green).</li>
+                <li>p: Combina una linea di decorazione sopra e sotto il testo all'interno degli elementi p con il colore viola (purple).</li>
+              </ul>
+              <br>
+              <div class="tips">Questi esempi mostrano come è possibile personalizzare il colore delle linee di decorazione per evidenziare e stilizzare il testo in modo più specifico.</div>
+              <br>
+              <h3>Di seguito il video dimostrativo</h3>
+              <br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/YQloVVDO6kQ?si=BTX9TOngZe97YYhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <br>
+              <!-- proprietà text-decoration-style -->
+              <hr id="text-decoration-style">
+              <h3>Specificare uno Stile per la Linea di Decorazione</h3>
+              <p>La proprietà text-decoration-style viene utilizzata per impostare lo stile della linea di decorazione.</p>
+              <pre id="myPreTag1" class="text-start">
+                <div class="codice">
+                  <code>                
+                    h1 {
+                      text-decoration-line: underline;
+                      text-decoration-style: solid;
+                    }
+                    
+                    h2 {
+                      text-decoration-line: underline;
+                      text-decoration-style: double;
+                    }
+                    
+                    h3 {
+                      text-decoration-line: underline;
+                      text-decoration-style: dotted;
+                    }
+                    
+                    p.ex1 {
+                      text-decoration-line: underline;
+                      text-decoration-style: dashed;
+                    }
+                    
+                    p.ex2 {
+                      text-decoration-line: underline;
+                      text-decoration-style: wavy;
+                    }                    
+                  </code>
+                </div>
+              </pre>
+              <ul>
+                <li>h1: Imposta una sottolineatura per l'elemento h1 con uno stile solido (solid).</li>
+                <li>h2: Imposta una sottolineatura per l'elemento h2 con uno stile a doppia linea (double).</li>
+                <li>h3: Imposta una sottolineatura per l'elemento h3 con uno stile a puntini (dotted).</li>
+                <li>p.ex1: Imposta una sottolineatura per l'elemento p con uno stile tratteggiato (dashed).</li>
+                <li>p.ex2: Imposta una sottolineatura per l'elemento p con uno stile ondulato (wavy).</li>
+              </ul>
+              <br>
+              <p>Questi esempi illustrano come personalizzare lo stile delle linee di decorazione, consentendo una maggiore flessibilità nella presentazione del testo nella tua pagina web.</p>
+              <br>
+              <h3>Di seguito il video dimostrativo</h3>
+              <br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Sp8CYwUgkZE?si=8JwxYckFB9p7EmFa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <br>
+              <!-- proprietà text-decoration-thickness -->
+              <hr id="text-decoration-thickness">
+              <h3>Specificare lo Spessore della Linea di Decorazione</h3>
+              <p>La proprietà text-decoration-thickness viene utilizzata per impostare lo spessore della linea di decorazione.</p>
+              <pre id="myPreTag1" class="text-start">
+                <div class="codice">
+                  <code>                
+                    h1 {
+                      text-decoration-line: underline;
+                      text-decoration-thickness: auto;
+                    }
+                    
+                    h2 {
+                      text-decoration-line: underline;
+                      text-decoration-thickness: 5px;
+                    }
+                    
+                    h3 {
+                      text-decoration-line: underline;
+                      text-decoration-thickness: 25%;
+                    }
+                    
+                    p {
+                      text-decoration-line: underline;
+                      text-decoration-color: red;
+                      text-decoration-style: double;
+                      text-decoration-thickness: 5px;
+                    }                    
+                  </code>
+                </div>
+              </pre>
+              <ul>
+                <li>h1: Imposta una sottolineatura per l'elemento h1 con uno spessore automatico (auto), che di solito dipende dal browser e dal contesto.</li>
+                <li>h2: Imposta una sottolineatura per l'elemento h2 con uno spessore di 5 pixel (5px).</li>
+                <li>h3: Imposta una sottolineatura per l'elemento h3 con uno spessore del 25% (25%), relativo alla larghezza del carattere.</li>
+                <li>p: Imposta una doppia sottolineatura rossa per l'elemento p con uno spessore di 5 pixel (5px).</li>
+              </ul>
+              <br>
+              <p>La proprietà text-decoration-thickness permette di regolare lo spessore delle linee di decorazione, offrendo maggiore controllo sulle dimensioni visive della decorazione del testo.</p>
+              <br>
+              <h3>Di seguito il video dimostrativo</h3>
+              <br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/FKJyPBj7kAA?si=5cE1uQYDfCqeQrf2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <br>
+              <!-- proprietà text-decoration-->
+              <hr id="text-decoration">
+              <h3>La proprietà text-decoration</h3>
+              <p>La proprietà text-decoration è una proprietà abbreviata per:</p>
+              <ul>
+                <li>text-decoration-line (obbligatorio)</li>
+                <li>text-decoration-color (opzionale)</li>
+                <li>text-decoration-style (opzionale)</li>
+                <li>text-decoration-thickness (opzionale)</li>
+              </ul>
+              <pre id="myPreTag1" class="text-start">
+                <div class="codice">
+                  <code>                
+                    h1 {
+                      text-decoration: underline;
+                    }
+                    
+                    h2 {
+                      text-decoration: underline red;
+                    }
+                    
+                    h3 {
+                      text-decoration: underline red double;
+                    }
+                    
+                    p {
+                      text-decoration: underline red double 5px;
+                    }                    
+                  </code>
+                </div>
+              </pre>
+              <br>
+              <ul>
+                <li>h1: Imposta una sottolineatura (underline) per l'elemento h1</li>
+                <li>h2: Imposta una sottolineatura (underline) e il colore rosso (red) per l'elemento h2.</li>
+                <li>h3: Imposta una sottolineatura (underline), il colore rosso (red), e uno stile di linea doppia (double) per l'elemento h3</li>
+                <li>p: Imposta una sottolineatura (underline), il colore rosso (red), uno stile di linea doppia (double), e uno spessore di 5 pixel (5px) per l'elemento p.</li>
+              </ul>
+              <div class="tips">Un piccolo suggerimento:
+                Tutti i collegamenti in HTML sono sottolineati per impostazione predefinita. A volte si vuole che i collegamenti siano stilizzati senza sottolineatura. La regola text-decoration: none; viene utilizzata per rimuovere la sottolineatura dai collegamenti, come mostrato nell'esempio seguente:</div>
+                <br>
+                <pre id="myPreTag1" class="text-start">
+                  <div class="codice">
+                    <code>                
+                      a {
+                        text-decoration: none;
+                      }                    
+                    </code>
+                  </div>
+                </pre>
+                <br>
+                <p>Questa regola viene spesso utilizzata per personalizzare lo stile dei collegamenti, ad esempio per farli apparire come pulsanti senza sottolineatura.</p>
+                <br>
+                <h3>Di seguito il video dimostrativo</h3>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/B2a_Mry2jU8?si=V_LfI7qlf1EprxE7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <!-- proprietà text-decoration-->
+                <hr id="text-transform">
+                <h3>Trasformazione del Testo</h3>
+                <p>La proprietà text-transform viene utilizzata per specificare lettere maiuscole e minuscole in un testo.</p>
+                <p>Può essere utilizzata per trasformare tutto in lettere maiuscole o minuscole, oppure per capitalizzare la prima lettera di ogni parola:</p>
+                <pre id="myPreTag1" class="text-start">
+                  <div class="codice">
+                    <code>                
+                      p.uppercase {
+                        text-transform: uppercase;
+                      }
+                      
+                      p.lowercase {
+                        text-transform: lowercase;
+                      }
+                      
+                      p.capitalize {
+                        text-transform: capitalize;
+                      }                    
+                    </code>
+                  </div>
+                </pre>
+                <ul>
+                  <li>p.uppercase: Imposta il testo all'interno degli elementi p in lettere maiuscole</li>
+                  <li>p.lowercase: Imposta il testo all'interno degli elementi p in lettere minuscole.</li>
+                  <li>p.capitalize: Capitalizza la prima lettera di ogni parola nel testo all'interno degli elementi p.</li>
+                </ul>
+                <p>Questi sono utili quando si desidera controllare il modo in cui il testo è visualizzato, ad esempio quando si desidera applicare uno stile specifico come tutto maiuscolo, tutto minuscolo o la capitalizzazione delle prime lettere delle parole.</p>
+                <br>
+                <h3>Di seguito il video dimostrativo</h3>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WqddhBKmsFU?si=HcFa7qgKDiWHWv4N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <!-- proprietà text-indent-->
+                <hr id="text-indent">
+                <h3>Rientro del Testo</h3>
+                <p>La proprietà text-indent viene utilizzata per specificare il rientro della prima riga di un testo:</p>
+                <pre id="myPreTag1" class="text-start">
+                  <div class="codice">
+                    <code>                
+                      p {
+                        text-indent: 50px;
+                      }                    
+                    </code>
+                  </div>
+                </pre>
+                <p>La regola text-indent: 50px; indica che la prima riga di testo all'interno degli elementi p rientrerà di 50 pixel rispetto al margine sinistro. Questo è utile per creare paragrafi con una formattazione più elaborata, migliorando la leggibilità e l'aspetto del testo. Puoi regolare il valore numerico in base alle tue preferenze o esigenze di design.</p>
+                <br>
+                <h3>Di seguito il video dimostrativo</h3>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6qMoWvo8Z2g?si=Sv-U9JCVnM1RRrvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <!-- proprietà letter-spacing-->
+                <hr id="letter-spacing">
+                <h3>Spaziatura tra le Lettere</h3>
+                <p>La proprietà letter-spacing viene utilizzata per specificare lo spazio tra i caratteri in un testo.</p>
+                <p>L'esempio seguente illustra come aumentare o diminuire lo spazio tra i caratteri:</p>
+                <pre id="myPreTag1" class="text-start">
+                  <div class="codice">
+                    <code>                
+                      h1 {
+                        letter-spacing: 5px;
+                      }
+                      
+                      h2 {
+                        letter-spacing: -2px;
+                      }                    
+                    </code>
+                  </div>
+                </pre>
+                <ul>
+                  <li>h1: Imposta lo spazio tra i caratteri all'interno degli elementi h1 a 5 pixel, aumentando la distanza tra le lettere.</li>
+                  <li>h2: Imposta lo spazio tra i caratteri all'interno degli elementi h2 a -2 pixel, diminuendo la distanza tra le lettere. Usare un valore negativo può far sovrapporre leggermente i caratteri.</li>
+                </ul>
+                <br>
+                <div class="tips">La regolazione della spaziatura tra le lettere è utile per controllare la leggibilità e l'aspetto del testo, adattandolo alle esigenze di design. Puoi regolare il valore numerico in base alle tue preferenze.</div>
+                <br>
+                <h3>Di seguito il video dimostrativo</h3>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Z_ar5ABdQVk?si=mgVHQJRckeInvER_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <!-- proprietà line-height-->
+                <hr id="line-height">
+                <h3>Altezza della Linea</h3>
+                <p>La proprietà line-height viene utilizzata per specificare lo spazio tra le linee di testo:</p>
+                <pre id="myPreTag1" class="text-start">
+                  <div class="codice">
+                    <code>                
+                      p.small {
+                        line-height: 0.8;
+                      }
+                      
+                      p.big {
+                        line-height: 1.8;
+                      }                    
+                    </code>
+                  </div>
+                </pre>
+                <p>p.small: Imposta lo spazio tra le linee all'interno degli elementi p a 0.8 volte l'altezza del carattere. Questo valore inferiore a 1 può rendere il testo più compatto.</p>
+                <p>p.big: Imposta lo spazio tra le linee all'interno degli elementi p a 1.8 volte l'altezza del carattere. Questo valore superiore a 1 può aumentare lo spazio tra le linee, migliorando la leggibilità del testo.</p>
+                <br>
+                <div class="tips">La regolazione dell'altezza della linea è utile per controllare la spaziatura verticale tra le righe di testo. Può essere utilizzata per adattare la presentazione del testo in modo che sia più facilmente leggibile e abbia l'aspetto desiderato. Puoi regolare il valore numerico in base alle tue preferenze o esigenze di design.</div>
+                <br>
+                <h3>Di seguito il video dimostrativo</h3>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/o0sZlDawCzs?si=3w7xGV8Rn7-yvz8_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <!-- proprietà word-spacing-->
+                <hr id="word-spacing">
+                <h3>Spaziatura tra le Parole</h3>
+                <p>La proprietà word-spacing viene utilizzata per specificare lo spazio tra le parole in un testo.</p>
+                <p>L'esempio seguente illustra come aumentare o diminuire lo spazio tra le parole:</p>
+                <pre id="myPreTag1" class="text-start">
+                  <div class="codice">
+                    <code>                
+                      p.one {
+                        word-spacing: 10px;
+                      }
+                      
+                      p.two {
+                        word-spacing: -2px;
+                      }                    
+                    </code>
+                  </div>
+                </pre>
+                <p>p.one: Imposta lo spazio tra le parole all'interno degli elementi p a 10 pixel, aumentando la distanza tra le parole.</p>
+                <p>p.two: Imposta lo spazio tra le parole all'interno degli elementi p a -2 pixel, diminuendo la distanza tra le parole. Usare un valore negativo può far sovrapporre leggermente le parole.</p>
+                <div class="tips">La regolazione della spaziatura tra le parole può influire sulla leggibilità e sull'aspetto del testo. Può essere utile per adattare il layout del testo alle esigenze di design o migliorare la formattazione del testo in determinati contesti. Puoi regolare il valore numerico in base alle tue preferenze o esigenze specifiche.</div>
+                <br>
+                <h3>Di seguito il video dimostrativo</h3>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/i04QGxvkiM8?si=1ZsOLYfexyCRJ-82" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <!-- proprietà white-space-->
+                <hr id="white-space">
+                <h3>Spazio Bianco</h3>
+                <p>La proprietà white-space specifica come viene gestito lo spazio bianco all'interno di un elemento.</p>
+                <p>Questo esempio illustra come disabilitare il testo a capo all'interno di un elemento:</p>
+                <pre id="myPreTag1" class="text-start">
+                  <div class="codice">
+                    <code>                
+                      p {
+                        white-space: nowrap;
+                      }                    
+                    </code>
+                  </div>
+                </pre>
+                <p>La regola white-space: nowrap; applicata agli elementi p impedisce che il testo all'interno del paragrafo non andrà a capo automaticamente alla fine della linea, ma continuerà su una singola linea, creando una barra di scorrimento orizzontale se il testo è più lungo del contenitore.</p>
+                <div class="tips">Questo può essere utile in situazioni in cui si desidera che il testo rimanga su una singola linea, ad esempio in una barra di navigazione orizzontale. Puoi regolare la gestione dello spazio bianco in base alle tue esigenze utilizzando altre opzioni come normal, pre, pre-line, o pre-wrap. Queste opzioni determinano come vengono trattati gli spazi bianchi, i ritorni a capo e il riavvolgimento del testo all'interno dell'elemento.</div>
+                <br>
+                <h3>Di seguito il video dimostrativo</h3>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gjaWjOhfhiw?si=WcOj6SVKMA3SbA1K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <!-- proprietà text-shadow-->
+                <hr id="text-shadow">
+                <h3>Ombra del Testo</h3>
+                <p>La proprietà text-shadow aggiunge un'ombra al testo.</p>
+                <p>Nel suo utilizzo più semplice, è sufficiente specificare l'ombra orizzontale (2px) e l'ombra verticale (2px):</p>
+                <p>Effetto ombra del testo!</p>
+                <pre id="myPreTag1" class="text-start">
+                  <div class="codice">
+                    <code>                
+                      h1 {
+                        text-shadow: 2px 2px;
+                      }
+                      h2 {
+                        text-shadow: 2px 2px red;
+                      }
+                      h3 {
+                        text-shadow: 2px 2px 5px red;
+                      }  
+                      h4 {
+                        color: black;
+                        text-shadow: 2px 2px 4px #ffffff;
+                      }
+                      h5 {
+                        text-shadow: 0 0 3px #ff0000;
+                      } 
+                      h6 {
+                        text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+                      }
+                      p {
+                        color: black;
+                        text-shadow: 1px 1px 2px white, 0 0 25px blue, 0 0 5px darkblue;
+                      }                 
+                    </code>
+                  </div>
+                </pre>
+                <p>La proprietà text-shadow consente di creare effetti di ombra per il testo. Nel primo esempio, l'ombra è posizionata 2 pixel orizzontalmente e 2 pixel verticalmente. Nei successivi esempi, viene aggiunto il colore rosso e l'effetto di sfocatura, dando un aspetto tridimensionale all'ombra del testo.</p>
+                <br>
+                <div class="tips">Gli esempi aggiuntivi mostrano come variare i colori e le dimensioni dell'ombra per ottenere effetti visivamente accattivanti. Questa proprietà può essere utilizzata per migliorare la leggibilità o per aggiungere stile al testo all'interno della tua pagina.</div>
+                <br>
+                <h3>Di seguito il video dimostrativo</h3>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sT6coOrEohE?si=-62R1J0iK-ojSNo1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p><br></p>
 
 
-    <!-- SCRIPT CHE MI PERMETTE DI FAR COMPARIRE IL PULSANTE TORNA SU DOPO ESSERE SCESO DI 500PX -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPT CHE MI PERMETTE DI FAR COMPARIRE IL PULSANTE TORNA SU DOPO ESSERE SCESO DI 800PX -->
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         var body = document.body;
